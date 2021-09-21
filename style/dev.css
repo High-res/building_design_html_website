@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/whatsapp/fontawesome-webfont.eot");
+  src: url("../fonts/whatsapp/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/whatsapp/fontawesome-webfont.woff2") format("woff2"), url("../fonts/whatsapp/fontawesome-webfont.woff") format("woff"), url("../fonts/whatsapp/fontawesome-webfont.ttf") format("truetype"), url("../fonts/whatsapp/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+.fa{
+ 	font: normal normal normal 14px/1 FontAwesome;
+}
+
+.contacts-form input{
+	border: 1px solid #000;
+	color: #000;
+}
+.contacts-form input::placeholder{
+	color: #000;
+}
+
+/* .price-link-download{
+	color:#000;
+	text-decoration:underline;
+	background: transparent;
+} */
+.price-link-download:hover{
+	color: #000;
+}
+iframe{
+	width: 100%;
+}
+
+.whatsapp {
+  position: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none !important;
+  z-index: 999;
+  transition: .3s;
+  position: fixed;
+  right: 8%;
+  bottom: 120px;
+  color: #ffffff;
+  height: 60px;
+  width: 60px;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  z-index: 999;
+  cursor: pointer;
+  border-radius: 50%;
+  text-decoration: none!important;
+}
+.whatsapp i {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+}
+
+.whatsapp:after, .whatsapp:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 5px solid #25d366;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+  animation-name: ring;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.whatsapp:before {
+  animation-delay: 0.8s;
+  border: 5px solid #25d366;
+  border-radius: 50%;
+}
+
+.whatsapp:after {
+  animation-delay: 0.6s;
+}
+
+@media screen and (max-width: 1024px) {
+  .whatsapp {
+      bottom: 50px;
+      width: 40px;
+      height: 40px;
+    }
+}
+
+@-webkit-keyframes ring {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7); } }
+
+@keyframes ring {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7); } }
+
+@-webkit-keyframes phone {
+  20% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg); }
+  80% {
+    -webkit-transform: rotate(390deg);
+    transform: rotate(390deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes phone {
+  20% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg); }
+  80% {
+    -webkit-transform: rotate(390deg);
+    transform: rotate(390deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
